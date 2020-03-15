@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>Item Form</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Scripts locales-->
+    <script src="js/item.js"></script>
+    <script src="js/apiItem.js"></script>
+
+    <!-- Nuestro css-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/index.css"
+      th:href="@{/css/index.css}"
+    />
+  </head>
+  <body>
+    <div class="modal-dialog text-center">
+      <div class="col-sm-8 main-section">
+        <div class="modal-content">
+          <div class="col-12 user-img">
+            <img src="img/icon-item.png" />
+          </div>
+          <form class="col-12">
+            <div class="form-group" id="id-item">
+              <input
+                type="number"
+                class="form-control"
+                placeholder="id"
+                id="id"
+              />
+            </div>
+            <div class="form-group" id="name-item">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="name"
+                id="name"
+              />
+            </div>
+            <div class="form-group" id="cantidad-item">
+              <input
+                type="number"
+                class="form-control"
+                placeholder="cantidad"
+                id="cantidad"
+              />
+            </div>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="itemModule.addItem()"
+            >
+              <i class="fas fa-sign-in-alt"></i> Add Item
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </body>
+</html>
