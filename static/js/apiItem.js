@@ -1,4 +1,4 @@
-const apiUrl = "http://localhost:8080/items";
+const apiUrl = "http://ec2-3-81-214-87.compute-1.amazonaws.com:8080/items";
 apiItem = (function() {
   return {
     addItem: function(item) {
